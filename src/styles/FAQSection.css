@@ -1,0 +1,90 @@
+/* styles/FAQSection.css */
+.faq-section {
+    min-height: 70vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-question.open {
+    background-color: #e1e1e1;
+}
+
+.arrow {
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    /* For screens up to 768px wide (e.g., tablets and mobiles) */
+    .faq-section h2 {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* For screens up to 480px wide (e.g., smartphones) */
+    .faq-section h2 {
+        font-size: 20px;
+    }
+
+    .faq-item {
+        max-width: 90%;
+        /* Adjust the width for smaller screens */
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+}
